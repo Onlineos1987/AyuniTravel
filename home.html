@@ -315,6 +315,44 @@
     </style>
 </head>
 <body>
+    <div class="modal fade" id="languageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Select Your Language</h5>
+            </div>
+            <div class="modal-body text-center">
+                <button onclick="selectLanguage('en')" class="btn btn-primary m-2">English</button>
+                <button onclick="selectLanguage('ur')" class="btn btn-success m-2">اردو</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to select and store language
+    function selectLanguage(lang) {
+        localStorage.setItem('lang', lang);
+        window.location.reload(); // Reload to apply changes
+    }
+
+    // On page load, check if language is set
+    document.addEventListener("DOMContentLoaded", function() {
+        const selectedLang = localStorage.getItem('lang');
+        if (!selectedLang) {
+            // Show modal if no language is selected
+            let langModal = new bootstrap.Modal(document.getElementById('languageModal'), { keyboard: false });
+            langModal.show();
+        } else {
+            // Set default language to English if none exists
+            if (!localStorage.getItem('lang')) {
+                localStorage.setItem('lang', 'en');
+            }
+            // Here you can load translations based on selectedLang
+            console.log('Selected language:', selectedLang);
+        }
+    });
+</script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
