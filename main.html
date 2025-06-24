@@ -309,14 +309,35 @@
         }
 
         /* Blinking Animation */
-        @keyframes blink-shadow {
+       /* @keyframes blink-shadow {
             0% { box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); }
             20% { box-shadow: 0 0 10px rgba(21, 0, 255, 0.6), 0 0 20px rgb(0, 13, 255); }
             45% { box-shadow: 0 0 15px rgba(26, 255, 0, 0.63), 0 0 30px rgb(0, 255, 0), 0 0 50px rgba(255, 0, 0, 0.2); }
             65% { box-shadow: 0 0 15px rgba(255, 213, 0, 0.6), 0 0 30px rgb(255, 247, 0), 0 0 50px rgba(255, 0, 0, 0.2); }
             85% { box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0); }
             100% { box-shadow: 0 0 5px rgba(255, 0, 221, 0.8); }
-        }
+        }*/
+        @keyframes blink-shadow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+  }
+  20% {
+    box-shadow: 0 0 10px rgba(0, 102, 255, 0.6), 0 0 20px rgb(0, 76, 255);
+  }
+  45% {
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.63), 0 0 30px rgb(0, 168, 255), 0 0 50px rgba(0, 128, 255, 0.4);
+  }
+  65% {
+    box-shadow: 0 0 15px rgba(0, 153, 255, 0.6), 0 0 30px rgb(0, 204, 255), 0 0 50px rgba(0, 102, 255, 0.4);
+  }
+  85% {
+    box-shadow: 0 0 10px rgb(0, 76, 255), 0 0 20px rgb(0, 64, 255);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+  }
+}
+
 
         .blinking-shadow-btn {
             animation: blink-shadow 2s infinite ease-in-out;
