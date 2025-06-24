@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ayuni Travels & Tours - Premium Hajj & Umrah Packages to Makkah and Madina. Book your spiritual journey today.">
-    <meta name="keywords" content="Hajj Packages, Umrah Packages, Islamic Travel, Makkah Tours, Madina Tours, Spiritual Journey">
+    <meta name="description" content="Ayuni Travels & Tours - Premium Hajj & Umrah Packages to Makkah and Madina. Experience spiritual journeys with trusted Islamic travel experts.">
+    <meta name="keywords" content="Hajj Packages, Umrah Packages, Islamic Travel, Makkah Tours, Madina Tours, Spiritual Journey, Saudi Arabia Pilgrimage, Muslim Travel Agency">
     <meta name="author" content="Ayuni Travels & Tours">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Ayuni Travels & Tours - Premium Hajj & Umrah Packages">
+    <meta property="og:description" content="Experience spiritual journeys to Makkah & Madina with trusted Islamic travel experts.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ayunitravels.com/">
+    <meta property="og:image" content="https://www.ayunitravels.com/assets/img/social-preview.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ayuni Travels & Tours - Premium Hajj & Umrah Packages">
+    <meta name="twitter:description" content="Experience spiritual journeys to Makkah & Madina with trusted Islamic travel experts.">
+    <meta name="twitter:image" content="https://www.ayunitravels.com/assets/img/social-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ayunitravels.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕋</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -18,27 +44,449 @@
       "logo": "https://www.ayunitravels.com/Assets/Img/logo.png",
       "sameAs": [
         "https://www.facebook.com/AyuniTravelsTours",
-        "https://www.instagram.com/ayunitravelstours"
+        "https://www.instagram.com/ayunitravelstours",
+        "https://www.youtube.com/AyuniTravelsTours"
       ],
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "123 Islamic Street",
+        "addressLocality": "Islamabad",
+        "postalCode": "44000",
         "addressCountry": "Pakistan"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
       }
     }
     </script>
     
     <title>Ayuni Travels & Tours - Premium Hajj & Umrah Packages | Makkah & Madina</title>
-    <!-- CSS and other head elements -->
+    
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --success: #198754;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --gold: #d4af37;
+            --green: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .container-fluid {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        .top-header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .top-header .row {
+            align-items: center;
+        }
+        
+        .logo {
+            max-width: 180px;
+            height: auto;
+        }
+        
+        .contact-info a {
+            color: var(--dark);
+            text-decoration: none;
+            margin: 0 5px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            margin: 0 5px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .social-icons .fa-facebook { background: #3b5998; }
+        .social-icons .fa-instagram { background: #e1306c; }
+        .social-icons .fa-youtube { background: #ff0000; }
+        .social-icons .fa-whatsapp { background: #25d366; }
+        
+        /* Navigation */
+        .navbar {
+            background-color: rgba(13, 110, 253, 0.95) !important;
+            padding: 0;
+        }
+        
+        .navbar-brand {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+            font-weight: 500;
+            padding: 1rem 1.2rem !important;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: white !important;
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            border: none;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: #0b5ed7;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Hero Slider */
+        .slider-section {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+        }
+        
+        .carousel-item {
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .carousel-item:first-child {
+            background: linear-gradient(rgba(0,0,0,0.5), url('https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        }
+        
+        .carousel-item:nth-child(2) {
+            background: linear-gradient(rgba(0,0,0,0.5), url('https://images.unsplash.com/photo-1602016160678-1a0ddebee6a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        }
+        
+        .carousel-item:nth-child(3) {
+            background: linear-gradient(rgba(0,0,0,0.5), url('https://images.unsplash.com/photo-1602002672328-9a1cdee1dc5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        }
+        
+        .carousel-caption {
+            bottom: 30%;
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+        
+        .carousel-caption h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+        
+        .carousel-caption p {
+            font-size: 1.5rem;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+            margin-bottom: 2rem;
+        }
+        
+        /* Content Sections */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: inline-block;
+            padding-bottom: 15px;
+            position: relative;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .package-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .package-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .package-content {
+            padding: 25px;
+        }
+        
+        .package-content h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .package-features li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .package-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 15px 0;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(13, 110, 253, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            background: #ddd;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.8);
+            padding: 60px 0 0;
+        }
+        
+        .footer h4 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer h4:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: var(--primary);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info-footer {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .contact-info-footer li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .contact-info-footer li i {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: var(--primary);
+        }
+        
+        .copyright {
+            background: rgba(0,0,0,0.2);
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 991px) {
+            .carousel-caption h1 {
+                font-size: 2.5rem;
+            }
+            
+            .carousel-caption p {
+                font-size: 1.2rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .top-header .col-md-6 {
+                margin: 10px 0;
+                text-align: center !important;
+            }
+            
+            .carousel-caption {
+                bottom: 20%;
+            }
+            
+            .carousel-caption h1 {
+                font-size: 2rem;
+            }
+            
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header class="container-fluid top-header" role="banner">
         <div class="container">
             <div class="row align-items-center">
-                <!-- Logo with structured data -->
+                <!-- Logo -->
                 <div class="col-md-3">
                     <a href="https://www.ayunitravels.com/" aria-label="Ayuni Travels Home">
-                        <img src="./Assets/Img/logo.png" alt="Ayuni Travels & Tours - Hajj and Umrah Specialists" width="200" height="60" class="img-fluid">
+                        <div class="logo">
+                            <h1>Ayuni Travels & Tours</h1>
+                        </div>
                     </a>
                 </div>
 
@@ -50,7 +498,7 @@
                         </a> 
                         <span aria-hidden="true"> | </span>
                         <a href="https://wa.me/923111786785" target="_blank" class="text-decoration-none" aria-label="WhatsApp us">
-                            <i class="fab fa-whatsapp text-success"></i> +92 3111 786 785
+                            <i class="fab fa-whatsapp"></i> +92 3111 786 785
                         </a>
                     </div>
                 </div>
@@ -59,7 +507,7 @@
                 <div class="col-md-3 text-end">
                     <div class="social-icons" role="contentinfo">
                         <a href="https://www.facebook.com/AyuniTravelsTours" target="_blank" aria-label="Facebook" rel="noopener">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.instagram.com/ayunitravelstours" target="_blank" aria-label="Instagram" rel="noopener">
                             <i class="fab fa-instagram"></i>
@@ -73,6 +521,43 @@
         </div>
     </header>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hajj-packages">Hajj Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#umrah-packages">Umrah Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#group-tours">Group Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-light">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Slider Section -->
     <section class="container-fluid slider-section m-0 p-0" aria-label="Travel Destinations">
         <div id="hajjCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -83,28 +568,270 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Assets/Img/makkah-hajj-package.jpg" class="d-block w-100" alt="Holy City of Makkah - Hajj Packages" width="1200" height="630">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="h4" data-translate="slider_1_title">Complete your spiritual journey with visits to the holy cities of Makkah</h1>
-                        <p class="text-primary" data-translate="slider_1_text">Experience the spiritual journey of a lifetime</p>
+                    <div class="carousel-caption">
+                        <h1>Complete Your Spiritual Journey to Makkah</h1>
+                        <p>Experience the journey of a lifetime with our premium Hajj packages</p>
+                        <a href="#hajj-packages" class="btn btn-primary btn-lg">Explore Packages</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="Assets/Img/madina-umrah-tour.jpg" class="d-block w-100" alt="Blessed City of Madina - Umrah Tours" width="1200" height="630">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="h4" data-translate="slider_2_title">Walk in the footsteps of the Prophet ﷺ in the blessed city of Madina</h1>
-                        <p data-translate="slider_2_text">Discover the tranquility of Madina – a sacred stop on your spiritual journey</p>
+                    <div class="carousel-caption">
+                        <h1>Walk in the Footsteps of the Prophet ﷺ in Madina</h1>
+                        <p>Discover tranquility and spirituality in the blessed city</p>
+                        <a href="#umrah-packages" class="btn btn-primary btn-lg">Umrah Packages</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="Assets/Img/hajj-umrah-combined.jpg" class="d-block w-100" alt="Hajj and Umrah Combined Packages" width="1200" height="630">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="h4" data-translate="slider_3_title">Embark on a sacred journey to Makkah and Madina</h1>
-                        <p data-translate="slider_3_text">The heart of every believer's dream</p>
+                    <div class="carousel-caption">
+                        <h1>Embark on a Sacred Journey to Makkah & Madina</h1>
+                        <p>The heart of every believer's dream</p>
+                        <a href="#contact" class="btn btn-primary btn-lg">Book Your Journey</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hajjCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hajjCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Hajj Packages Section -->
+    <section id="hajj-packages" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hajj Packages 2024</h2>
+                <p>Experience the journey of a lifetime with our carefully crafted Hajj packages</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <div class="package-img" style="background: linear-gradient(rgba(0,0,0,0.3), url('https://images.unsplash.com/photo-1591382386627-349b692688ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="package-content">
+                            <h3>Economy Hajj Package</h3>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> 15 Days / 14 Nights</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> 3-Star Accommodation</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Group Transportation</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Guided Ziyarat Tours</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Daily Meals Included</li>
+                            </ul>
+                            <div class="package-price">$3,499</div>
+                            <button class="btn btn-primary w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <div class="package-img" style="background: linear-gradient(rgba(0,0,0,0.3), url('https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="package-content">
+                            <h3>Deluxe Hajj Package</h3>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> 20 Days / 19 Nights</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> 4-Star Accommodation</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Private Transportation</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Exclusive Ziyarat Tours</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Premium Buffet Meals</li>
+                            </ul>
+                            <div class="package-price">$5,999</div>
+                            <button class="btn btn-primary w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="package-card">
+                        <div class="package-img" style="background: linear-gradient(rgba(0,0,0,0.3), url('https://images.unsplash.com/photo-1602016160678-1a0ddebee6a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                        <div class="package-content">
+                            <h3>VIP Hajj Package</h3>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> 25 Days / 24 Nights</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> 5-Star Luxury Hotels</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Private Limousine Service</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Personal Hajj Guide</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Gourmet Dining Experience</li>
+                            </ul>
+                            <div class="package-price">$9,999</div>
+                            <button class="btn btn-primary w-100">Book Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-start">
+                        <h2>About Ayuni Travels</h2>
+                        <p>Your trusted partner for spiritual journeys</p>
+                    </div>
+                    <p>Founded in 2005, Ayuni Travels & Tours has been facilitating spiritual journeys to Makkah and Madina for thousands of pilgrims. With over 18 years of experience, we've perfected the art of creating meaningful, comfortable, and spiritually fulfilling Hajj and Umrah experiences.</p>
+                    <p>Our team of Islamic scholars, travel experts, and logistics professionals work together to ensure every aspect of your journey is handled with care, respect, and attention to detail. We understand the significance of this spiritual journey and strive to make it as seamless as possible.</p>
+                    <div class="mt-4">
+                        <h3>Why Choose Us?</h3>
+                        <ul>
+                            <li><strong>Expert Guidance:</strong> Our knowledgeable guides provide spiritual and logistical support</li>
+                            <li><strong>Premium Accommodations:</strong> Carefully selected hotels near the Haram</li>
+                            <li><strong>24/7 Support:</strong> Dedicated team available throughout your journey</li>
+                            <li><strong>Safety First:</strong> Comprehensive health and safety protocols</li>
+                            <li><strong>Value for Money:</strong> Transparent pricing with no hidden fees</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="background: linear-gradient(rgba(13, 110, 253, 0.1), url('https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'); height: 500px; background-size: cover; background-position: center; border-radius: 10px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pilgrim Testimonials</h2>
+                <p>What our travelers say about their spiritual journey with us</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "My Hajj journey with Ayuni Travels was beyond expectations. Every detail was taken care of, allowing me to focus completely on my worship. The guides were knowledgeable and supportive throughout."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img"></div>
+                            <div>
+                                <h4>Ahmed Khan</h4>
+                                <p>Hajj 2023 Pilgrim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The Umrah package for our family was perfectly organized. From visa processing to accommodation near the Haram, everything was seamless. Will definitely use Ayuni Travels again for our next spiritual journey."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img"></div>
+                            <div>
+                                <h4>Fatima Ali</h4>
+                                <p>Family Umrah 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "As a first-time Hajji, I was nervous about the journey. Ayuni Travels made everything so easy. Their experienced staff guided us through every ritual. The hotel was just 5 minutes from Masjid al-Haram!"
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-img"></div>
+                            <div>
+                                <h4>Abdul Rehman</h4>
+                                <p>Hajj 2023 Pilgrim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4>Ayuni Travels & Tours</h4>
+                    <p>Your trusted partner for Hajj and Umrah journeys since 2005. We specialize in creating spiritually fulfilling experiences with premium services.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#hajj-packages">Hajj Packages</a></li>
+                        <li><a href="#umrah-packages">Umrah Packages</a></li>
+                        <li><a href="#group-tours">Group Tours</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-footer">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Islamic Street, Islamabad, Pakistan</li>
+                        <li><i class="fas fa-phone-alt"></i> +92 51 111 786 785</li>
+                        <li><i class="fab fa-whatsapp"></i> +92 3111 786 785</li>
+                        <li><i class="fas fa-envelope"></i> info@ayunitravels.com</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 mb-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates on special packages and spiritual journey tips</p>
+                    <div class="input-group mt-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container text-center">
+                <p>&copy; 2023 Ayuni Travels & Tours. All Rights Reserved. | Designed with ❤️ for Spiritual Journeys</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Initialize carousel
+        const myCarousel = document.getElementById('hajjCarousel')
+        const carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 5000,
+            wrap: true
+        })
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Sticky header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('nav');
+            header.classList.toggle('sticky', window.scrollY > 100);
+        });
+    </script>
 </body>
 </html>
