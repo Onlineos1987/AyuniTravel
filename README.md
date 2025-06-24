@@ -1,6 +1,6 @@
 # Ayuni Travels & Tours - Hajj & Umrah Packages Website
 
-![Ayuni Travels Website Screenshot](screenshot.jpg)
+![Ayuni Travels Website Screenshot]([screenshot.jpg](https://onlineos1987.github.io/AyuniTravel/Assets/Img/car%20rental.png))
 
 ## Overview
 
