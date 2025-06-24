@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuni Travels - Your Trusted Travel Partner</title>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        .top-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .contact-info {
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #ffd700;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 5px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ffd700;
+        }
+
+        /* Navigation */
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        /* Slider Section */
+        .slider-section {
+            position: relative;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Support Section */
+        .support-section {
+            background: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .support-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .support-text {
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        .support-subtext {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .support-contact a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .support-contact a:hover {
+            color: #007bff;
+        }
+
+        .support-icon {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        /* Custom Heading */
+        .custom-heading {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .custom-heading .highlight {
+            color: #28a745;
+        }
+
+        .custom-heading .icon {
+            color: #28a745;
+        }
+
+        /* Package Cards */
+        .package-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .package-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .package-card .card-body {
+            padding: 20px;
+        }
+
+        .package-card .card-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .package-card .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #007bff;
+            margin: 0;
+        }
+
+        .package-card .card-footer {
+            background: white;
+            border: none;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .package-card .details {
+            color: #007bff;
+            font-weight: 500;
+        }
+
+        .package-card .arrow {
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+
+        .divider {
+            height: 4px;
+            margin: 0;
+        }
+
+        /* Info Section */
+        .info-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+
+        .info-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .info-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Callback Button */
+        .callback-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .callback-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,123,255,0.4);
+        }
+
+        /* Blinking Animation */
+        @keyframes blink-shadow {
+            0% { box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); }
+            20% { box-shadow: 0 0 10px rgba(21, 0, 255, 0.6), 0 0 20px rgb(0, 13, 255); }
+            45% { box-shadow: 0 0 15px rgba(26, 255, 0, 0.63), 0 0 30px rgb(0, 255, 0), 0 0 50px rgba(255, 0, 0, 0.2); }
+            65% { box-shadow: 0 0 15px rgba(255, 213, 0, 0.6), 0 0 30px rgb(255, 247, 0), 0 0 50px rgba(255, 0, 0, 0.2); }
+            85% { box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0); }
+            100% { box-shadow: 0 0 5px rgba(255, 0, 221, 0.8); }
+        }
+
+        .blinking-shadow-btn {
+            animation: blink-shadow 2s infinite ease-in-out;
+        }
+
+        .blinking-shadow-btn:hover {
+            animation: blink-shadow 2s infinite ease-in;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .blinking-shadow-btn {
+                animation: none;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer h5 {
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+            line-height: 2;
+        }
+
+        .footer a:hover {
+            color: #ffd700;
+        }
+
+        .footer .social-icons a {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .custom-heading {
+                font-size: 1.5rem;
+            }
+            
+            .callback-btn {
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 20px;
+            }
+            
+            .support-contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Ayuni Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Umrah <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#calculator">Umrah Calculator</a></li>
+                            <li><a class="dropdown-item" href="#packages">Umrah Packages</a></li>
+                            <li><a class="dropdown-item" href="#best-packages">Best Umrah Packages</a></li>
+                            <li><a class="dropdown-item" href="#child-visa">Child Umrah Visa</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#transport">Umrah Transport Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <span class="text-white small me-2">Language:</span>
+                    <select class="form-select form-select-sm" style="width: auto;">
+                        <option value="en" selected>English</option>
+                        <option value="ur">اردو</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="container-fluid top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-md-3">
+                    <a href="#home">
+                        <img src="./Assets/Img/logo.png" alt="Ayuni Travel" class="img-fluid w-100">
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-6 text-center">
+                    <span class="contact-info">
+                        <a href="tel:+9251111786785" class="text-decoration-none">
+                            <i class="fas fa-phone-alt"></i> +92 51 111 786 785
+                        </a> |
+                        <a href="https://wa.me/923111786785" target="_blank" class="text-decoration-none">
+                            <i class="fab fa-whatsapp text-success"></i> +92 3111 786 785
+                        </a>
+                    </span>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-3 text-end">
+                    <span class="social-icons">
+                        <a href="https://www.facebook.com/AyuniTravelsTours" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ayunitravelstours" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Section -->
+    <div class="container-fluid slider-section m-0 p-0">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Img/img1.png" class="d-block w-100" alt="Makkah">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h5>Complete your spiritual journey with visits to the holy cities of Makkah.</h5>
+                        <p class="text-primary">Experience the spiritual journey of a lifetime.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Img/img2.png" class="d-block w-100" alt="Madina">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Walk in the footsteps of the Prophet ﷺ in the blessed city of Madina.</h5>
+                        <p>Discover the tranquility of Madina – a sacred stop on your spiritual journey.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Img/img1.png" class="d-block w-100" alt="Sacred Journey">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Embark on a sacred journey to Makkah and Madina</h5>
+                        <p>the heart of every believer's dream.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- 24/7 Support Section -->
+    <div class="container-fluid support-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="Assets/Img/liveSupport.webp" alt="Support" class="support-img me-3">
+                    <div>
+                        <div class="support-text">24/7 Hours Support</div>
+                        <div class="support-subtext">Speak to our Travel Expert</div>
+                    </div>
+                </div>
+                <div class="col-md-8 d-flex justify-content-md-end gap-4 flex-wrap support-contact">
+                    <a href="https://wa.me/923111786785" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-whatsapp text-success support-icon"></i>
+                        <span>+92 3111 222 333</span>
+                    </a>
+                    <a href="tel:+9251111786785" target="_blank" class="text-decoration-none">
+                        <i class="fas fa-phone-alt text-primary support-icon"></i>
+                        +92 51 111 222 333
+                    </a>
+                    <a href="mailto:info@ayunitravel.com" class="text-decoration-none">
+                        <i class="fas fa-envelope text-danger support-icon"></i>
+                        info@ayunitravel.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Packages Section -->
+        <h2 class="custom-heading d-flex justify-content-between align-items-center">
+            <span>Explore <span class="icon">✔</span> <span class="highlight">Umrah</span> Best Packages</span>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mapModal">
+                <i class="bi bi-geo-alt-fill"></i> View Map
+            </button>
+        </h2>
+
+        <!-- Map Modal -->
+        <div class="modal fade" id="mapModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Our Location</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-2">
+                        <iframe class="w-100" height="400" 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d496.1344775531091!2d72.770697!3d33.762712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa750bb279a9f%3A0xc201923b55bd767a!2sAyuni%20Tech%20Services!5e1!3m2!1sen!2sus!4v1741588700284!5m2!1sen!2sus" 
+                                loading="lazy"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Packages Row -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card package-card">
+                    <img src="Assets/Img/maqam-e-ibrahim.webp" class="card-img-top" alt="Economy Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Economy Umrah Package</h5>
+                        <p class="text-muted">Starting from</p>
+                        <p class="price">SR 728*</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="details">View Details</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="divider bg-success"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card package-card">
+                    <img src="Assets/Img/best Umrah Packages.webp" class="card-img-top" alt="Best Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Umrah Packages</h5>
+                        <p class="text-muted">Starting from</p>
+                        <p class="price">SR 1292*</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="details">View Details</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="divider bg-primary"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card package-card">
+                    <img src="Assets/Img/Umrah Package.webp" class="card-img-top" alt="Ramzan Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Ramzan Umrah Package</h5>
+                        <p class="text-muted">Starting from</p>
+                        <p class="price">SR 1256*</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="details">View Details</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="divider bg-success"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card package-card">
+                    <img src="Assets/Img/Executive Umrah Packages.webp" class="card-img-top" alt="Executive Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Executive Umrah Package</h5>
+                        <p class="text-muted">Starting from</p>
+                        <p class="price">SR 2756*</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="details">View Details</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="divider bg-primary"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="info-card">
+            <div class="info-heading">Welcome to Ayuni Travels</div>
+            
+            <div class="row align-items-center my-4">
+                <div class="col-12">
+                    <p class="info-text">
+                        At Ayuni Travels, we specialize in providing comprehensive travel services to make your journey smooth and memorable. Whether you're planning a spiritual pilgrimage or a leisure trip, our experienced team is here to assist you every step of the way.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row align-items-center my-4 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <p class="info-text">
+                        <strong>1. Flight Booking:</strong><br>
+                        We offer competitive flight booking services with major airlines. Our team helps you find the best deals and convenient schedules for your travel dates.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded" src="Assets/Img/flight.png" alt="Flight Booking">
+                </div>
+            </div>
+
+            <div class="row align-items-center my-4">
+                <div class="col-md-6">
+                    <p class="info-text">
+                        <strong>2. Visa Assistance:</strong><br>
+                        Our visa processing team provides complete assistance for all types of visas including tourist, business, and pilgrimage visas with proper documentation guidance.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded" src="Assets/Img/Visa.png" alt="Visa Assistance">
+                </div>
+            </div>
+
+            <div class="row align-items-center my-4 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <p class="info-text">
+                        <strong>3. Hotel Reservations:</strong><br>
+                        From budget-friendly accommodations to luxury hotels, we provide booking services for all types of lodging near holy sites and major attractions.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded" src="Assets/Img/hottel.png" alt="Hotel Reservations">
+                </div>
+            </div>
+
+            <div class="row align-items-center my-4">
+                <div class="col-md-6">
+                    <p class="info-text">
+                        <strong>4. Car Rentals:</strong><br>
+                        We provide reliable car rental services with experienced drivers who are familiar with local routes and can ensure your comfortable transportation.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded" src="Assets/Img/car rental.png" alt="Car Rentals">
+                </div>
+            </div>
+
+            <!-- Subscription Section -->
+            <div class="row my-5">
+                <div class="col-lg-4">
+                    <p class="info-text">
+                        Stay updated with our latest travel packages, deals, and travel tips by subscribing to our newsletter.
+                    </p>
+                </div>
+                <div class="col-lg-8">
+                    <form onsubmit="subscribeUser(event)">
+                        <div class="input-group">
+                            <span class="input-group-text">📧</span>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <div id="message" class="mt-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Call Back Button -->
+    <button type="button" class="callback-btn blinking-shadow-btn" data-bs-toggle="modal" data-bs-target="#callbackModal">
+        Request Call Back <i class="fas fa-phone-alt"></i>
+    </button>
+
+    <!-- Callback Modal -->
+    <div class="modal fade" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request Call Back</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Fill out the form below and our travel expert will call you back within 24 hours.</p>
+                    <form id="callbackForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label fw-bold">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label fw-bold">Phone</label>
+                                <input type="tel" class="form-control" id="phone" pattern="[0-9]{10,}" required>
+                                <div class="invalid-feedback">Please enter a valid phone number.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="city" class="form-label fw-bold">Country</label>
+                                <input type="text" class="form-control" id="city" required>
+                                <div class="invalid-feedback">Please enter your city or country.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="remarks" class="form-label fw-bold">Remarks</label>
+                                <textarea class="form-control" id="remarks" rows="3" required></textarea>
+                                <div class="invalid-feedback">Please enter a message.</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success" form="callbackForm">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-md-3">
+                    <img class="w-100" src="./Assets/Img/logo.png" alt="Ayuni Travels">
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#flights">Flights</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#agency">Travel Agency</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#refund">Refund Policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Branches -->
+                <div class="col-md-3">
+                    <h5>Our Branches</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Wah Cantt</a></li>
+                        <li><a href="#">Attock</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>
+                        <a href="tel:+9251111786785">
+                            <i class="bi bi-telephone-plus-fill"></i> +92 51 111 222 333
+                        </a><br>
+                        <a href="mailto:info@ayunitravel.com">
+                            <i class="bi bi-envelope-at-fill"></i> info@ayunitravel.com
+                        </a><br>
+                        <i class="bi bi-geo-alt-fill"></i> Office Address<br>
+                        Wah Cantt, Punjab, Pakistan
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p>&copy; 2024 Ayuni Travels. All rights reserved. | Designed with ❤️ for your spiritual journey</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Bootstrap Form Validation
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        event.preventDefault();
+                        alert("Thank you! We'll call you back within 24 hours.");
+                        form.reset();
+                        form.classList.remove('was-validated');
+                        var modal = bootstrap.Modal.getInstance(document.getElementById('callbackModal'));
+                        modal.hide();
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })();
+
+        // Subscription Function
+        function subscribeUser(event) {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            let messageBox = document.getElementById("message");
+
+            if (email.trim() === "") {
+                messageBox.innerHTML = "<div class='alert alert-danger'>Please enter a valid email!</div>";
+                return;
+            }
+
+            // Simulate successful subscription
+            messageBox.innerHTML = "<div class='alert alert-success'>Thank you for subscribing! You'll receive our latest updates.</div>";
+            document.getElementById("email").value = "";
+            
+            // Remove message after 5 seconds
+            setTimeout(() => {
+                messageBox.innerHTML = "";
+            }, 5000);
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Language selector functionality
+        document.querySelector('select[name="language"]').addEventListener('change', function() {
+            // This would typically reload the page or switch content
+            console.log('Language changed to:', this.value);
+        });
+    </script>
+</body>
+</html>
