@@ -1,0 +1,80 @@
+<!-- header.html -->
+<!-- Header Section -->
+<div class="container-fluid top-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-md-3">
+                <a href="#home">
+                    <img src="./Assets/Img/logo.png" alt="Ayuni Travel" class="img-fluid w-100">
+                </a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-6 text-center">
+                <span class="contact-info">
+                    <a href="tel:+9251111786785" class="text-decoration-none">
+                        <i class="fas fa-phone-alt"></i> +92 51 111 786 785
+                    </a> |
+                    <a href="https://wa.me/923111786785" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-whatsapp text-success"></i> +92 3111 786 785
+                    </a>
+                </span>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-3 text-end">
+                <span class="social-icons">
+                    <a href="https://www.facebook.com/AyuniTravelsTours" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ayunitravelstours" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home" data-translate="home">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-translate="umrah">Umrah <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#packages" data-translate="umrah_packages">Umrah Packages</a></li>
+                        <li><a class="dropdown-item" href="#best-packages" data-translate="best_umrah_packages">Best Umrah Packages</a></li>
+                        <li><a class="dropdown-item" href="#child-visa" data-translate="child_umrah_visa">Child Umrah Visa</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#transport" data-translate="umrah_transport">Umrah Transport Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" data-translate="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" data-translate="contact">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <span class="text-white small me-2" data-translate="language">Language:</span>
+                <select id="languageSelect" class="form-select form-select-sm" style="width: auto;">
+                    <option value="en" data-translate="english">English</option>
+                    <option value="ur" data-translate="urdu">اردو</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</nav>
