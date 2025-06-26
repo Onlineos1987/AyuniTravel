@@ -1,6 +1,6 @@
 # Ayuni Travels & Tours - Hajj & Umrah Packages Website
 
-![Ayuni Travels Website Screenshot]([screenshot.jpg](https://onlineos1987.github.io/AyuniTravel/Assets/Img/car%20rental.png))
+![Ayuni Travels Website Screenshot]([VISIT](https://onlineos1987.github.io/AyuniTravel/main.html))
 
 ## Overview
 
@@ -49,7 +49,7 @@ Ayuni Travels & Tours is a responsive travel agency website specializing in Hajj
 
 ## Live Demo
 
-[View Live Demo](https://ayunitravels-demo.com)
+[View Live Demo](https://onlineos1987.github.io/AyuniTravel/main.html)
 
 ## Screenshots
 
