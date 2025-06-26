@@ -1,6 +1,6 @@
 # Ayuni Travels & Tours - Hajj & Umrah Packages Website
 
-![Ayuni Travels Website Screenshot]([VISIT](https://onlineos1987.github.io/AyuniTravel/main.html))
+![Ayuni Travels Website Screenshot]([VISIT](https://onlineos1987.github.io/AyuniTravel/Assets/Img/img1.png))
 
 ## Overview
 
