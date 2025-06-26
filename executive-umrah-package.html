@@ -1,957 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ayuni Travels & Tours - Premium Hajj & Umrah Packages to Makkah and Madina. Experience spiritual journeys with trusted Islamic travel experts.">
-    <meta name="keywords" content="Hajj Packages, Umrah Packages, Islamic Travel, Makkah Tours, Madina Tours, Spiritual Journey, Saudi Arabia Pilgrimage, Muslim Travel Agency">
-    <meta name="author" content="Ayuni Travels & Tours">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Ayuni Travels & Tours - Premium Hajj & Umrah Packages">
-    <meta property="og:description" content="Experience spiritual journeys to Makkah & Madina with trusted Islamic travel experts.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ayunitravels.com/">
-    <meta property="og:image" content="https://www.ayunitravels.com/assets/img/social-preview.jpg">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ayuni Travels & Tours - Premium Hajj & Umrah Packages">
-    <meta name="twitter:description" content="Experience spiritual journeys to Makkah & Madina with trusted Islamic travel experts.">
-    <meta name="twitter:image" content="https://www.ayunitravels.com/assets/img/social-preview.jpg">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.ayunitravels.com/">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕋</text></svg>">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-
-    
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "Ayuni Travels & Tours",
-      "telephone": "+9251111786785",
-      "url": "https://www.ayunitravels.com/",
-      "logo": "https://www.ayunitravels.com/Assets/Img/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/AyuniTravelsTours",
-        "https://www.instagram.com/ayunitravelstours",
-        "https://www.youtube.com/AyuniTravelsTours"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Islamic Street",
-        "addressLocality": "Islamabad",
-        "postalCode": "44000",
-        "addressCountry": "Pakistan"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
-    }
-    </script>
-    <title data-translate="site_title">Ayuni Travels - Your Trusted Travel Partner</title>
-    
-    <!-- CSS Libraries -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    
+    <!-- ... (head content remains the same) ... -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* Additional styles for packages table */
+        .package-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            direction: ltr;
+        
+        .package-table th, .package-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
         }
-
-        [lang="ur"] body {
-            font-family: 'Noto Naskh Arabic', sans-serif;
-            direction: rtl;
-        }
-
-        /* Header Styles */
-        /*.top-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 10px 0;
-        }*/
-        .top-header {
-    background: linear-gradient(138deg, #66a1ea 0%, #96d00b 100%);
-    color: white;
-    padding: 10px 0;
-}
-
-        .contact-info {
-            font-size: 14px;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            color: #008dd6;
-        }
-
-        .social-icons a {
-            color: white;
-            margin: 0 5px;
-            font-size: 18px;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #008dd6;
-        }
-
-        /* Navigation */
-        .navbar {
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .navbar-brand {
+        
+        .package-table th {
+            background-color: #f8f9fa;
             font-weight: 600;
-            font-size: 1.5rem;
         }
-
-        /* Slider Section */
-        .slider-section {
-            position: relative;
+        
+        .package-table tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
-
-        .carousel-item img {
-            height: 500px;
-            object-fit: cover;
+        
+        .package-highlight {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
         }
-
-        .carousel-caption {
-            background: rgba(0,0,0,0.5);
-            padding: 20px;
+        
+        .hotel-list {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .hotel-list li {
+            margin-bottom: 5px;
+        }
+        
+        .note-box {
+            background-color: #fffde7;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        
+        .package-container {
+            background: white;
             border-radius: 10px;
-        }
-
-        /* Support Section */
-        .support-section {
-            background: #f8f9fa;
-            padding: 20px 0;
-        }
-
-        .support-img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .support-text {
-            font-weight: 600;
-            color: #007bff;
-        }
-
-        .support-subtext {
-            font-size: 14px;
-            color: #6c757d;
-        }
-
-        .support-contact a {
-            color: #333;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-
-        .support-contact a:hover {
-            color: #007bff;
-        }
-
-        .support-icon {
-            font-size: 20px;
-            margin-right: 5px;
-        }
-
-        /* Custom Heading */
-        .custom-heading {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .custom-heading .highlight {
-            color: #96d00b;
-        }
-
-        .custom-heading .icon {
-            color: #96d00b;
-        }
-
-        /* Package Cards */
-        .package-card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 25px;
             margin-bottom: 30px;
         }
-
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-
-        .package-card img {
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .package-card .card-body {
-            padding: 20px;
-        }
-
-        .package-card .card-title {
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .package-card .price {
-            font-size: 1.5rem;
-            font-weight: 700;
+        
+        .package-title {
             color: #008dd6;
-            margin: 0;
-        }
-
-        .package-card .card-footer {
-            background: white;
-            border: none;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .package-card .details {
-            color: #007bff;
-            font-weight: 500;
-        }
-
-        .package-card .arrow {
-            color: #007bff;
-            font-size: 1.2rem;
-        }
-        .bg-primary {
-    --bs-bg-opacity: 1;
-    background-color: rgb(0 141 214) !important;
-        }
-        .bg-success {
-    --bs-bg-opacity: 1;
-    background-color: rgb(150 208 11) !important;
-}
-
-        .divider-section {
-            height: 4px;
-            margin: 0;
-        }
-
-        /* Info Section */
-        .info-section {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin: 0px;
-        }
-
-        .info-heading {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #333;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .info-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #555;
+            border-bottom: 2px solid #96d00b;
+            padding-bottom: 10px;
             margin-bottom: 20px;
         }
-
-        /* Callback Button */
-        .callback-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: linear-gradient(45deg, #007bff, #0056b3);
-            color: white;
-            border: none;
-            padding: 15px 25px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
-            transition: all 0.3s ease;
-        }
-
-        .callback-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,123,255,0.4);
-        }
-
-        /* Blinking Animation */
-       /* @keyframes blink-shadow {
-            0% { box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); }
-            20% { box-shadow: 0 0 10px rgba(21, 0, 255, 0.6), 0 0 20px rgb(0, 13, 255); }
-            45% { box-shadow: 0 0 15px rgba(26, 255, 0, 0.63), 0 0 30px rgb(0, 255, 0), 0 0 50px rgba(255, 0, 0, 0.2); }
-            65% { box-shadow: 0 0 15px rgba(255, 213, 0, 0.6), 0 0 30px rgb(255, 247, 0), 0 0 50px rgba(255, 0, 0, 0.2); }
-            85% { box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0); }
-            100% { box-shadow: 0 0 5px rgba(255, 0, 221, 0.8); }
-        }*/
-        @keyframes blink-shadow {
-  0% {
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
-  }
-  20% {
-    box-shadow: 0 0 10px rgba(0, 102, 255, 0.6), 0 0 20px rgb(0, 76, 255);
-  }
-  45% {
-    box-shadow: 0 0 15px rgba(0, 195, 255, 0.63), 0 0 30px rgb(0, 168, 255), 0 0 50px rgba(0, 128, 255, 0.4);
-  }
-  65% {
-    box-shadow: 0 0 15px rgba(0, 153, 255, 0.6), 0 0 30px rgb(0, 204, 255), 0 0 50px rgba(0, 102, 255, 0.4);
-  }
-  85% {
-    box-shadow: 0 0 10px rgb(0, 76, 255), 0 0 20px rgb(0, 64, 255);
-  }
-  100% {
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
-  }
-}
-
-
-        .blinking-shadow-btn {
-            animation: blink-shadow 2s infinite ease-in-out;
-        }
-
-        .blinking-shadow-btn:hover {
-            animation: blink-shadow 2s infinite ease-in;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .blinking-shadow-btn {
-                animation: none;
-            }
-        }
-
-        /* Footer */
-        .footer {
-            background: #333;
-            color: white;
-            padding: 40px 0 20px;
-            margin-top: 60px;
-        }
-
-        .footer h5 {
-            color:#96d00b;
-            margin-bottom: 20px;
-        }
-
-        .footer a {
-            color: #ccc;
-            text-decoration: none;
-            line-height: 2;
-        }
-
-        .footer a:hover {
-            color: #96d00b;
-        }
-
-        .footer .social-icons a {
-            font-size: 24px;
-            margin-right: 15px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .custom-heading {
-                font-size: 1.5rem;
-            }
-            
-            .callback-btn {
-                bottom: 20px;
-                right: 20px;
-                padding: 12px 20px;
-            }
-            
-            .support-contact {
-                flex-direction: column;
-                gap: 10px;
-            }
+        
+        .validity {
+            font-style: italic;
+            color: #d32f2f;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <!-- Language Selection Modal -->
-    <div class="modal fade" id="languageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" data-translate="select_language">Select Your Language</h5>
-                </div>
-                <div class="modal-body text-center">
-                    <button onclick="selectLanguage('en')" class="btn btn-primary m-2" data-translate="english">English</button>
-                    <button onclick="selectLanguage('ur')" class="btn btn-success m-2" data-translate="urdu">اردو</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- ... (header and navigation remain the same) ... -->
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home" data-translate="home">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-translate="umrah">Umrah <i class="bi bi-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <!--<li><a class="dropdown-item" href="#calculator" data-translate="umrah_calculator">Umrah Calculator</a></li>-->
-                            <li><a class="dropdown-item" href="#packages" data-translate="umrah_packages">Umrah Packages</a></li>
-                            <li><a class="dropdown-item" href="#best-packages" data-translate="best_umrah_packages">Best Umrah Packages</a></li>
-                            <li><a class="dropdown-item" href="#child-visa" data-translate="child_umrah_visa">Child Umrah Visa</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#transport" data-translate="umrah_transport">Umrah Transport Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" data-translate="about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" data-translate="contact">Contact</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center">
-                    <span class="text-white small me-2" data-translate="language">Language:</span>
-                    <select id="languageSelect" class="form-select form-select-sm" style="width: auto;">
-                        <option value="en" data-translate="english">English</option>
-                        <option value="ur" data-translate="urdu">اردو</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header Section -->
-    <div class="container-fluid top-header">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Logo -->
-                <div class="col-md-3">
-                    <a href="#home">
-                        <img src="./Assets/Img/logo.png" alt="Ayuni Travel" class="img-fluid w-100">
-                    </a>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-md-6 text-center">
-                    <span class="contact-info">
-                        <a href="tel:+9251111786785" class="text-decoration-none">
-                            <i class="fas fa-phone-alt"></i> +92 51 111 786 785
-                        </a> |
-                        <a href="https://wa.me/923111786785" target="_blank" class="text-decoration-none">
-                            <i class="fab fa-whatsapp text-success"></i> +92 3111 786 785
-                        </a>
-                    </span>
-                </div>
-
-                <!-- Social Media -->
-                <div class="col-md-3 text-end">
-                    <span class="social-icons">
-                        <a href="https://www.facebook.com/AyuniTravelsTours" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/ayunitravelstours" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     <div class="container">
-        <h1>15 Days Umrah Package 2024-2025</h1>
-        <p>The Umrah pilgrimage is a profound spiritual experience that cleanses the soul and strengthens one's faith. At Ayuni Travel, we understand how important this sacred journey is.</p>
-        <p>We are dedicated to providing you with a smooth and enriching Umrah experience. Our 15-day Umrah package from Pakistan is carefully planned to ensure your pilgrimage is comfortable, spiritually fulfilling, and memorable.</p>
-
-        <div class="section">
-            <h2>Comprehensive 15 Days Umrah Package</h2>
-            <p>Our 15-day Umrah Package offers a comprehensive itinerary that covers all essential aspects of the pilgrimage, from travel arrangements to accommodation and guided tours. We aim to provide a hassle-free experience so you can focus entirely on your spiritual journey.</p>
-            <h3>Package Inclusions:</h3>
-            <ul>
-                <li><strong>Round-trip Airfare:</strong> Flights from major cities in Pakistan to Jeddah or Madinah, ensuring a convenient and comfortable journey.</li>
-                <li><strong>Visa Processing:</strong> Our team handles all visa requirements and paperwork, ensuring a smooth and stress-free process.</li>
-                <li><strong>Luxurious Accommodation:</strong> Stay in 4-star or 5-star hotels near Haram in Makkah and Madinah, offering luxury and convenience.</li>
-                <li><strong>Transportation:</strong> Private air-conditioned transport for airport transfers and travel between Makkah and Madinah.</li>
-                <li><strong>Guided Tours:</strong> Experienced guides offer insights and information about rituals and historical significance of the sites.</li>
-                <li><strong>Meals:</strong> Daily breakfast and dinner, with several options to enhance your trip.</li>
-                <li><strong>Ziarat Tours:</strong> Visits to significant religious and historical sites in Makkah and Madinah.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Detailed Itinerary</h2>
-            <h3>Day 1: Departure from Pakistan</h3>
-            <ul>
-                <li>Depart from your city in Pakistan and arrive in Jeddah or Madinah.</li>
-                <li>Meet and assist at the airport, followed by transfer to your hotel in Makkah.</li>
-                <li>Check in and rest after your journey.</li>
-            </ul>
-            <h3>Day 2-4: Perform Umrah in Makkah</h3>
-            <ul>
-                <li>Guided assistance for performing Umrah rituals: Tawaf, Sa'i, and Halq/Taqsir.</li>
-                <li>Spend your days in the holy city of Makkah, engaging in prayers and exploring the Haram.</li>
-                <li>Visit important sites like Jabal al-Noor, Jabal Thawr, and Masjid Aisha.</li>
-            </ul>
-            <h3>Day 5-8: Explore Makkah</h3>
-            <ul>
-                <li>Participate in guided Ziarat tours to significant landmarks such as Mina, Muzdalifah, Arafat, and the Cave of Hira.</li>
-                <li>Free time for individual worship and personal reflection.</li>
-            </ul>
-            <h3>Day 9: Travel to Madinah</h3>
-            <ul>
-                <li>Check-out from your hotel in Makkah and travel to Madinah via private air-conditioned transport.</li>
-                <li>Check in at your hotel in Madinah and rest.</li>
-            </ul>
-            <h3>Day 10-13: Discover the Holy City of Madinah</h3>
-            <ul>
-                <li>Visit the Prophet's Mosque (Masjid an-Nabawi) and offer prayers.</li>
-                <li>Participate in guided Ziarat tours to significant sites like Quba Mosque, Qiblatain Mosque, and Jannat al-Baqi.</li>
-                <li>Spend your days in spiritual activities and exploring the historical sites of Madinah.</li>
-            </ul>
-            <h3>Day 14: Return Preparation</h3>
-            <ul>
-                <li>Enjoy your last day in Madinah, performing prayers and shopping for souvenirs.</li>
-                <li>Check out from the hotel and prepare for your return journey.</li>
-            </ul>
-            <h3>Day 15: Return to Pakistan</h3>
-            <ul>
-                <li>Transfer to the airport for your return flight to Pakistan.</li>
-                <li>Arrive back home with cherished memories and a spiritually enriched heart.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Why Choose Ayuni Travel for Your Umrah Journey?</h2>
-            <ul>
-                <li><strong>Experienced and Professional Team:</strong> Our team ensures every aspect of your journey is managed with precision and care.</li>
-                <li><strong>Comfort and Convenience:</strong> Comfortable accommodations, private transport, and guided tours ensure a seamless experience.</li>
-                <li><strong>Affordability:</strong> Competitive pricing without compromising on quality.</li>
-                <li><strong>Customer Support:</strong> 24/7 customer support for any queries or concerns.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>How to Book Your 15-Day Umrah Package?</h2>
-            <p>Booking your <a href="https://www.ayunitravel.com/umrah-packages/umrah">Umrah package</a> with Ayuni Travel is simple and hassle-free. You can <a href="https://www.ayunitravel.com/Umrhbookingdyn">book through our website</a> or contact our customer support team for assistance. We recommend booking well in advance to ensure availability and secure the best rates.</p>
-        </div>
-
-        <div class="section">
-            <h2>FAQs</h2>
-            <h3>What is included in the 15-day Umrah Package from Pakistan?</h3>
-            <p>Our 15-day Umrah Package includes round-trip airfare, visa processing, luxurious accommodation in Makkah and Madinah, private air-conditioned transport, guided tours, daily breakfast and dinner, and Ziarat tours to significant religious and historical sites.</p>
-            <h3>How do I book the 15-day Umrah Package?</h3>
-            <p>You can book the package through our website at <a href="https://www.ayunitravel.com">www.ayunitravel.com</a> or contact our customer support team at +92-51-111-786-785 or via email at <a href="mailto:info@ayunitravel.com">info@ayunitravel.com</a>.</p>
-            <h3>What documents are required for the Umrah visa?</h3>
-            <p>To process your <a href="https://www.ayunitravel.com/visa/umrah-visa">Umrah visa</a>, you will need a valid passport with at least six months validity, passport-sized photographs, a completed visa application form, and proof of vaccination (optional).</p>
-            <h3>What type of accommodation is provided in the package?</h3>
-            <p>We provide luxurious accommodation in 4-star or 5-star hotels near Haram in Makkah and Madinah, chosen for their comfort, convenience, and proximity to the holy sites.</p>
-            <h3>Is the package suitable for elderly pilgrims?</h3>
-            <p>Yes, our package is designed to accommodate pilgrims of all ages, including the elderly, with comfortable accommodations, private transport, and guided assistance.</p>
-            <h3>Can I customize the 15-day Umrah Package?</h3>
-            <p>Yes, we offer customization options to meet your specific needs. Contact our customer support team to discuss any special requirements.</p>
-            <h3>What kind of transportation is provided during the trip?</h3>
-            <p>We provide private air-conditioned transport for airport transfers, travel between Makkah and Madinah, and Ziarat tours.</p>
-            <h3>What are Ziarat tours, and which sites are included?</h3>
-            <p>Ziarat tours are guided visits to significant religious and historical sites in Makkah and Madinah, including Jabal al-Noor, Jabal Thawr, Masjid Aisha, Mina, Muzdalifah, Arafat, the Cave of Hira, Quba Mosque, Qiblatain Mosque, and Jannat al-Baqi.</p>
-            <h3>What is the refund policy if I need to cancel my trip?</h3>
-            <p>Our refund policy depends on the timing of the cancellation and the specific terms of the package. Please contact our customer support team for detailed information.</p>
-            <h3>How much is a 15-day Umrah package from Pakistan?</h3>
-            <p>The cost typically ranges from PKR 150,000 to PKR 400,000 per person, with economy packages starting at around PKR 150,000, standard packages at PKR 200,000 to PKR 300,000, and executive packages at PKR 300,000 or more.</p>
-        </div>
-
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p><strong>Address:</strong> Ayuni Travel, Office No 1-3, Ground Floor, 44 East, Fazal E Haq Road, Blue Area, G 6/2, Islamabad, 44000, Pakistan</p>
-            <p><strong>Phone:</strong> +92 51 111 786 785</p>
-            <p><strong>WhatsApp:</strong> +92 3111 786 785</p>
-            <p><strong>Email:</strong> <a href="mailto:info@ayunitravel.com">info@ayunitravel.com</a></p>
-            <p><strong>Branches:</strong></p>
-            <ul>
-                <li>Islamabad: +92 51 111786785</li>
-                <li>Peshawar: +92 91 7251626</li>
-                <li>Lahore: +92 42 111786785</li>
-                <li>Dubai (UAE): +971 4 55 43 482</li>
-                <li>United Kingdom: +44 7377 501587</li>
-            </ul>
-        </div>
-    </div>
-
-    
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <div class="container my-5">
+        <h1 class="custom-heading">Umrah Packages <span class="highlight">2024-2025</span></h1>
+        
+        <!-- Package 1 -->
+        <div class="package-container">
+            <h2 class="package-title">Package 1</h2>
+            
             <div class="row">
-                <!-- Logo -->
-                <div class="col-md-3">
-                    <img class="w-100" src="./Assets/Img/logo.png" alt="Ayuni Travels">
+                <div class="col-md-6">
+                    <h4>Makkah Hotel</h4>
+                    <p>Movenpick Hajar Tower with Breakfast</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Madinah Hotel</h4>
+                    <p>Dar Al Eiman Al Haram Hotel with Breakfast</p>
+                </div>
+            </div>
+            
+            <p class="validity">Valid until 15 July 2025</p>
+            
+            <table class="package-table">
+                <thead>
+                    <tr>
+                        <th>Makkah Nights</th>
+                        <th>Madinah Nights</th>
+                        <th>Total Nights</th>
+                        <th>Double (SAR)</th>
+                        <th>Triple (SAR)</th>
+                        <th>Quad (SAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>3750</td>
+                        <td>3000</td>
+                        <td>2650</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>5300</td>
+                        <td>4300</td>
+                        <td>3650</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="note-box">
+                <p><strong>Please note:</strong></p>
+                <ul>
+                    <li>Umrah visa included</li>
+                    <li>Price is per person in Saudi Riyal (SAR)</li>
+                    <li>Air ticket not included</li>
+                    <li>Airport to hotel one-way pick-up included</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Package 2 -->
+        <div class="package-container">
+            <h2 class="package-title">Package 2</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Makkah Hotels</h4>
+                    <p>Makkah Al Massa Grand / Shohada Hotel / Sheraton Makkah</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Madinah Hotels</h4>
+                    <p>Saja Al Medinah / Rawda Al Aqeeq</p>
+                </div>
+            </div>
+            
+            <p class="validity">Valid until 15 July 2025</p>
+            
+            <table class="package-table">
+                <thead>
+                    <tr>
+                        <th>Makkah Nights</th>
+                        <th>Madinah Nights</th>
+                        <th>Total Nights</th>
+                        <th>Double (SAR)</th>
+                        <th>Triple (SAR)</th>
+                        <th>Quad (SAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>2600</td>
+                        <td>2100</td>
+                        <td>1950</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>3475</td>
+                        <td>2800</td>
+                        <td>2450</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="note-box">
+                <p><strong>Please note:</strong></p>
+                <ul>
+                    <li>Umrah visa included</li>
+                    <li>Price is per person in Saudi Riyal (SAR)</li>
+                    <li>Air ticket not included</li>
+                    <li>Airport to hotel one-way pick-up included</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Package 3 -->
+        <div class="package-container">
+            <h2 class="package-title">Package 3</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Makkah Hotels</h4>
+                    <p>Makkah Towers RO / Makarem Ajyad BB</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Madinah Hotels</h4>
+                    <p>Saja Al Madinah RO / Al Saha RO</p>
+                </div>
+            </div>
+            
+            <table class="package-table">
+                <thead>
+                    <tr>
+                        <th>Makkah Nights</th>
+                        <th>Madinah Nights</th>
+                        <th>Total Nights</th>
+                        <th>Double (SAR)</th>
+                        <th>Triple (SAR)</th>
+                        <th>Quad (SAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="note-box">
+                <p><strong>Please note:</strong></p>
+                <ul>
+                    <li>Umrah visa included</li>
+                    <li>Price is per person in Saudi Riyal (SAR)</li>
+                    <li>Air ticket not included</li>
+                    <li>Airport to hotel one-way pick-up included</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Package 4 -->
+        <div class="package-container">
+            <h2 class="package-title">Package 4</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Makkah Hotels</h4>
+                    <p>Double Tree By Hilton BB / Marriot Jabal E Umar BB</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Madinah Hotels</h4>
+                    <p>Saja Al Madinah RO / Al Saha RO</p>
+                </div>
+            </div>
+            
+            <table class="package-table">
+                <thead>
+                    <tr>
+                        <th>Makkah Nights</th>
+                        <th>Madinah Nights</th>
+                        <th>Total Nights</th>
+                        <th>Double (SAR)</th>
+                        <th>Triple (SAR)</th>
+                        <th>Quad (SAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="note-box">
+                <p><strong>Please note:</strong></p>
+                <ul>
+                    <li>Umrah visa included</li>
+                    <li>Price is per person in Saudi Riyal (SAR)</li>
+                    <li>Air ticket not included</li>
+                    <li>Airport to hotel one-way pick-up included</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 5 Star Umrah Packages Section -->
+        <div class="package-container">
+            <h2 class="package-title">5 Star Umrah Packages</h2>
+            
+            <p>Our 5 Star Umrah package provides accommodation in premium 4-star and 5-star hotels of Makkah and Madinah. Enjoy breakfast, room service, Wi-Fi, and air-conditioned rooms during your spiritual journey. Our hotels are strategically located close to Harmain Shareefain for your convenience.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Five Star Hotels in Makkah</h4>
+                    <ul class="hotel-list">
+                        <li>Hilton Suites Makkah</li>
+                        <li>Swissotel Makkah</li>
+                        <li>Fairmont Clock Royal Tower</li>
+                        <li>Hilton Tower</li>
+                        <li>Makkah Tower</li>
+                        <li>Pullman Zamzam Makkah</li>
+                        <li>Movenpick Hotel</li>
+                        <li>Makkah Millennium Hotel</li>
+                        <li>Dar Al Tawhid (Intercontinental Hotel Makkah)</li>
+                    </ul>
+                    <p>These hotels are at zero distance from Masjid Al-Haram. We also provide any hotel as per your demand in Makkah.</p>
                 </div>
                 
-                <!-- Quick Links -->
-                <div class="col-md-3">
-                    <h5 data-translate="quick_links">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#home" data-translate="home">Home</a></li>
-                        <li><a href="#flights" data-translate="flights">Flights</a></li>
-                        <li><a href="#about" data-translate="about">About</a></li>
-                        <li><a href="#agency" data-translate="travel_agency">Travel Agency</a></li>
-                        <li><a href="#privacy" data-translate="privacy_policy">Privacy Policy</a></li>
-                        <li><a href="#refund" data-translate="refund_policy">Refund Policy</a></li>
-                        <li><a href="#contact" data-translate="contact">Contact</a></li>
+                <div class="col-md-6">
+                    <h4>Five Star Hotels in Madinah</h4>
+                    <ul class="hotel-list">
+                        <li>Pullman Zamzam Hotel</li>
+                        <li>Madinah Marriott Hotel</li>
+                        <li>Millennium Al Aqeeq Hotel</li>
+                        <li>Crown Plaza</li>
+                        <li>Dar Al Taqwa Hotel</li>
+                        <li>Movenpick Hotel</li>
+                        <li>Madinah Hilton</li>
+                        <li>Shaza Al Madinah</li>
+                        <li>Al Eiman Royal Hotel</li>
+                        <li>Al Haram</li>
+                        <li>Rove Hotel</li>
                     </ul>
+                    <p>All hotels are closest to Masjid Nabawi. We can arrange any hotel as per your preference.</p>
                 </div>
-
-                <!-- Branches -->
-                <div class="col-md-3">
-                    <h5 data-translate="our_branches">Our Branches</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" data-translate="wah_cantt">Wah Cantt</a></li>
-                        <li><a href="#" data-translate="attock">Attock</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div class="col-md-3">
-                    <h5 data-translate="contact">Contact</h5>
-                    <p>
-                        <a href="tel:+9251111786785">
-                            <i class="bi bi-telephone-plus-fill"></i> <span data-translate="phone_number">+92 51 111 222 333</span>
-                        </a><br>
-                        <a href="mailto:info@ayunitravel.com">
-                            <i class="bi bi-envelope-at-fill"></i> <span data-translate="email">info@ayunitravel.com</span>
-                        </a><br>
-                        <i class="bi bi-geo-alt-fill"></i> <span data-translate="address">Office Address<br>Wah Cantt, Punjab, Pakistan</span>
-                    </p>
-                    <!-- Social Icons -->
-                    <div class="social-icons">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+            
+            <div class="package-highlight">
+                <h4>Umrah Transport</h4>
+                <p>We provide luxury transport services including airport transfers and city transportation. Choose from Toyota, Land Cruiser, GMC, private cars, or Hiace vehicles based on your family size and preferences.</p>
+            </div>
+            
+            <div class="package-highlight">
+                <h4>Umrah Visa Service</h4>
+                <p>We handle all visa processing including Umrah Visa, Umrah Evisa, sticker visa, and tourist visa. Complete the requirements and receive your visa at your doorstep.</p>
+            </div>
+            
+            <div class="package-highlight">
+                <h4>Umrah Flights</h4>
+                <p>We offer competitive rates for Umrah return tickets with direct flights to Makkah and Madinah via Dubai. Combine your spiritual journey with a Turkey tour option.</p>
+            </div>
+            
+            <div class="package-highlight">
+                <h4>Umrah Ziyarat</h4>
+                <p>Enhance your spiritual journey with guided visits to holy sites:</p>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Ziyarat in Makkah</h5>
+                        <ul>
+                            <li>Masjid Al Haram</li>
+                            <li>Masjid Aisha</li>
+                            <li>Mount Arafat (Jable Rehmat)</li>
+                            <li>Jannatul Maula</li>
+                            <li>Jabal an-Nour</li>
+                            <li>Jabal Thawr (Ghar E Thor)</li>
+                            <li>Ghar-e-Hira</li>
+                            <li>Masjid-e-Nimra</li>
+                            <li>Birth Place of the Holy Prophet [s]</li>
+                            <li>National Library of Makkah</li>
+                            <li>Masjid Jinn</li>
+                            <li>Mount Abu Qubays</li>
+                            <li>Al Khaif Mosque</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h5>Ziyarat in Madinah</h5>
+                        <ul>
+                            <li>Masjid-e-Quba</li>
+                            <li>Masjid-e-Nabawi</li>
+                            <li>Riyaad-ul-Jannah</li>
+                            <li>Masjid Abu Bakar</li>
+                            <li>Masjid-e-Jumah</li>
+                            <li>Masjid Bilal</li>
+                            <li>Masjid-e-Khandaq</li>
+                            <li>Masjid Miqat Bir Ali</li>
+                            <li>Jannat-Ul-Baqi</li>
+                            <li>Masjid-e-Qiblatain</li>
+                            <li>Wadi E Al-Baida (Wadi Jinn)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <!-- Copyright -->
-            <div class="text-center mt-4">
-                <p data-translate="copyright">© 2024 Ayuni Travels. All rights reserved. | Designed with ❤️ for your spiritual journey</p>
+            
+            <h3>FAQs</h3>
+            
+            <div class="mb-4">
+                <h5>Which things are covered in the Executive Umrah Package?</h5>
+                <p>The Executive Umrah Package includes Umrah tickets, visa processing, luxury accommodation in 4-5 star hotels, private transportation, and guided ziyarat tours. We provide VIP services throughout your journey.</p>
+            </div>
+            
+            <div class="mb-4">
+                <h5>What is the hotel distance in Executive Umrah Package?</h5>
+                <p>We provide accommodation at premium hotels very close to Masjid Al-Haram and Masjid Nabawi, with some located at zero distance. In Makkah, you'll stay at Anjum Hotel, Hilton Suites, or Swiss Hotel. In Madina, accommodations include Pullman Zamzam, Madina Marriot Hotel, or Dar Al Taqwa Hotel.</p>
+            </div>
+            
+            <div class="mb-4">
+                <h5>What's the duration of Executive Umrah Package?</h5>
+                <p>We offer 7-day, 10-day and 15-day durations for Executive Umrah Packages. The stay can be extended up to 30 days. All packages include luxury facilities from hotel booking to transportation.</p>
+            </div>
+            
+            <div class="mb-4">
+                <h5>How to book Umrah Visa Online?</h5>
+                <p>You can easily book Umrah Visa online from anywhere in the world. Simply send us scanned copies of your passport and photo to receive your Umrah E-Visa within 24 hours.</p>
+            </div>
+            
+            <div class="mb-4">
+                <h5>Is the Executive Umrah Package very expensive?</h5>
+                <p>Our Executive Umrah Packages offer premium services at competitive prices. While providing luxury accommodations and VIP transport, we ensure our packages remain affordable and offer excellent value.</p>
+            </div>
+            
+            <div class="note-box">
+                <p><strong>Important Note:</strong> Package rates may vary due to seasonality, airfares, and hotel availability. Contact us for the most current pricing and special offers.</p>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // Translation objects
-        const translations = {
-            en: {
-                site_title: "Ayuni Travels - Your Trusted Travel Partner",
-                select_language: "Select Your Language",
-                english: "English",
-                urdu: "Urdu",
-                home: "Home",
-                umrah: "Umrah",
-                umrah_calculator: "Umrah Calculator",
-                umrah_packages: "Umrah Packages",
-                best_umrah_packages: "Best Umrah Packages",
-                child_umrah_visa: "Child Umrah Visa",
-                umrah_transport: "Umrah Transport Services",
-                about: "About",
-                contact: "Contact",
-                language: "Language",
-                slider_1_title: "Complete your spiritual journey with visits to the holy cities of Makkah.",
-                slider_1_text: "Experience the spiritual journey of a lifetime.",
-                slider_2_title: "Walk in the footsteps of the Prophet ﷺ in the blessed city of Madina.",
-                slider_2_text: "Discover the tranquility of Madina – a sacred stop on your spiritual journey.",
-                slider_3_title: "Embark on a sacred journey to Makkah and Madina",
-                slider_3_text: "the heart of every believer's dream.",
-                support_title: "24/7 Hours Support",
-                support_subtext: "Speak to our Travel Expert",
-                whatsapp_number: "+92 3111 222 333",
-                phone_number: "+92 51 111 222 333",
-                email: "info@ayunitravel.com",
-                packages_title: "Explore <span class='icon'>✔</span> <span class='highlight'>Umrah</span> Best Packages",
-                view_map: "View Map",
-                map_title: "Our Location",
-                close: "Close",
-                economy_package: "Economy Umrah Package",
-                best_package: "Best Umrah Packages",
-                ramzan_package: "Ramzan Umrah Package",
-                executive_package: "Executive Umrah Package",
-                starting_from: "Starting from",
-                view_details: "View Details",
-                welcome: "Welcome to Ayuni Travels",
-                about_intro: "At Ayuni Travels, we specialize in providing comprehensive travel services to make your journey smooth and memorable. Whether you're planning a spiritual pilgrimage or a leisure trip, our experienced team is here to assist you every step of the way.",
-                flight_booking: "<strong>1. Flight Booking:</strong> Ayuni Travels provides hassle-free flight booking services, offering competitive rates on domestic and international flights. With a user-friendly online booking system and a dedicated team of travel experts, we ensure the flight booking process is smooth and straightforward.",
-                visa_assistance: "<strong>2. Visa Assistance:</strong> Navigating the complexities of visa applications can be daunting, often involving a myriad of forms, requirements, and procedures that vary from one country to another. Ayuni Travels simplifies this process by offering professional visa assistance services.",
-                hotel_reservations: "<strong>3. Hotel Reservations:</strong> Finding the right accommodation is crucial for a comfortable and enjoyable travel experience. Ayuni Travels offers extensive hotel reservation services designed to meet the diverse needs and preferences of our clients.",
-                car_rentals: "<strong>6. Car Rentals:</strong> For travelers who prefer the flexibility of exploring destinations at their own pace, Ayuni Travels offers reliable and comprehensive car rental services.",
-                subscribe_text: "Stay updated with our latest travel packages, deals, and travel tips by subscribing to our newsletter.",
-                subscribe: "Subscribe",
-                request_callback: "Request Call Back",
-                callback_text: "Fill out the form below and our travel expert will call you back within 24 hours.",
-                name: "Name",
-                name_required: "Please enter your name.",
-                phone: "Phone",
-                phone_invalid: "Please enter a valid phone number.",
-                email_label: "Email",
-                email_invalid: "Please enter a valid email.",
-                country: "Country",
-                country_required: "Please enter your city or country.",
-                remarks: "Remarks",
-                remarks_required: "Please enter a message.",
-                submit: "Submit",
-                quick_links: "Quick Links",
-                flights: "Flights",
-                travel_agency: "Travel Agency",
-                privacy_policy: "Privacy Policy",
-                refund_policy: "Refund Policy",
-                our_branches: "Our Branches",
-                wah_cantt: "Wah Cantt",
-                attock: "Attock",
-                address: "Office Address<br>Wah Cantt, Punjab, Pakistan",
-                copyright: "© 2024 Ayuni Travels. All rights reserved. | Designed with ❤️ for your spiritual journey"
-            },
-            ur: {
-                site_title: "ایونی ٹریولز - آپ کا قابل اعتماد سفر پارٹنر",
-                select_language: "اپنی زبان منتخب کریں",
-                english: "انگریزی",
-                urdu: "اردو",
-                home: "ہوم",
-                umrah: "عمرہ",
-                umrah_calculator: "عمرہ کیلکولیٹر",
-                umrah_packages: "عمرہ پیکیجز",
-                best_umrah_packages: "بہترین عمرہ پیکیجز",
-                child_umrah_visa: "بچوں کا عمرہ ویزا",
-                umrah_transport: "عمرہ ٹرانسپورٹ سروسز",
-                about: "ہمارے بارے میں",
-                contact: "رابطہ",
-                language: "زبان",
-                slider_1_title: "مکہ کے مقدس شہروں کے دوروں کے ساتھ اپنا روحانی سفر مکمل کریں۔",
-                slider_1_text: "زندگی بھر کے روحانی سفر کا تجربہ کریں۔",
-                slider_2_title: "مدینہ کے بابرکت شہر میں نبی ﷺ کے نقش قدم پر چلیں۔",
-                slider_2_text: "مدینہ کی سکون کی دریافت کریں – آپ کے روحانی سفر کا ایک مقدس مقام۔",
-                slider_3_title: "مکہ اور مدینہ کا مقدس سفر شروع کریں",
-                slider_3_text: "ہر مومن کے خواب کا مرکز۔",
-                support_title: "24/7 گھنٹے کی سپورٹ",
-                support_subtext: "ہمارے ٹریول ماہر سے بات کریں",
-                whatsapp_number: "+92 3111 222 333",
-                phone_number: "+92 51 111 222 333",
-                email: "info@ayunitravel.com",
-                packages_title: "<span class='highlight'>عمرہ</span> کے بہترین پیکیجز <span class='icon'>✔</span> دریافت کریں",
-                view_map: "نقشہ دیکھیں",
-                map_title: "ہمارا مقام",
-                close: "بند کریں",
-                economy_package: "ایکونومی عمرہ پیکیج",
-                best_package: "بہترین عمرہ پیکیجز",
-                ramzan_package: "رمضان عمرہ پیکیج",
-                executive_package: "ایگزیکٹو عمرہ پیکیج",
-                starting_from: "شروعات سے",
-                view_details: "تفصیلات دیکھیں",
-                welcome: "ایونی ٹریولز میں خوش آمدید",
-                about_intro: "ایونی ٹریولز میں، ہم آپ کے سفر کو ہموار اور یادگار بنانے کے لیے جامع ٹریول سروسز فراہم کرنے میں مہارت رکھتے ہیں۔ چاہے آپ روحانی زیارت کی منصوبہ بندی کر رہے ہوں یا تفریحی سفر، ہماری تجربہ کار ٹیم آپ کے ہر قدم پر مدد کے لیے موجود ہے۔",
-                flight_booking: "<strong>1. فلائٹ بکنگ:</strong> ایونی ٹریولز پریشانی سے پاک فلائٹ بکنگ سروسز فراہم کرتا ہے، جو ملکی اور بین الاقوامی پروازوں پر مسابقتی نرخوں کی پیشکش کرتا ہے۔ ایک صارف دوست آن لائن بکنگ سسٹم اور ٹریول ماہرین کی ایک وقف ٹیم کے ساتھ، ہم اس بات کو یقینی بناتے ہیں کہ فلائٹ بکنگ کا عمل ہموار اور سیدھا ہو۔",
-                visa_assistance: "<strong>2. ویزا امداد:</strong> ویزا درخواستوں کی پیچیدگیوں کو نیویگیٹ کرنا مشکل ہو سکتا ہے، جس میں اکثر مختلف ممالک کے لحاظ سے فارموں، تقاضوں اور طریقہ کار کی ایک بڑی تعداد شامل ہوتی ہے۔ ایونی ٹریولز پیشہ ورانہ ویزا امدادی سروسز پیش کر کے اس عمل کو آسان بناتا ہے۔",
-                hotel_reservations: "<strong>3. ہوٹل ریزرویشنز:</strong> آرام دہ اور پرلطف سفر کے تجربے کے لیے صحیح رہائش کا انتخاب بہت ضروری ہے۔ ایونی ٹریولز اپنے کلائنٹس کی متنوع ضروریات اور ترجیحات کو پورا کرنے کے لیے ڈیزائن کی گئی وسیع ہوٹل ریزرویشن سروسز پیش کرتا ہے۔",
-                car_rentals: "<strong>6. کار کرایہ:</strong> وہ مسافر جو اپنی مرضی کے مطابق مقامات کی سیر کرنے کی آزادی کو ترجیح دیتے ہیں، ان کے لیے ایونی ٹریولز قابل اعتماد اور جامع کار کرایہ کی سروسز پیش کرتا ہے۔",
-                subscribe_text: "ہمارے تازہ ترین ٹریول پیکیجز، ڈیلز، اور ٹریول ٹپس کے ساتھ اپ ڈیٹ رہنے کے لیے ہمارے نیوز لیٹر کو سبسکرائب کریں۔",
-                subscribe: "سبسکرائب کریں",
-                request_callback: "کال بیک کی درخواست کریں",
-                callback_text: "نیچے دیا گیا فارم پُر کریں اور ہمارا ٹریول ماہر 24 گھنٹوں کے اندر آپ کو واپس کال کرے گا۔",
-                name: "نام",
-                name_required: "براہ کرم اپنا نام درج کریں۔",
-                phone: "فون",
-                phone_invalid: "براہ کرم ایک درست فون نمبر درج کریں۔",
-                email_label: "ای میل",
-                email_invalid: "براہ کرم ایک درست ای میل درج کریں۔",
-                country: "ملک",
-                country_required: "براہ کرم اپنا شہر یا ملک درج کریں۔",
-                remarks: "تبصرے",
-                remarks_required: "براہ کرم ایک پیغام درج کریں۔",
-                submit: "جمع کریں",
-                quick_links: "فوری لنکس",
-                flights: "پروازیں",
-                travel_agency: "ٹریول ایجنسی",
-                privacy_policy: "رازداری کی پالیسی",
-                refund_policy: "واپسی کی پالیسی",
-                our_branches: "ہماری شاخیں",
-                wah_cantt: "واہ کینٹ",
-                attock: "اٹک",
-                address: "دفتر کا پتہ<br>واہ کینٹ، پنجاب، پاکستان",
-                copyright: "© 2024 ایونی ٹریولز۔ جملہ حقوق محفوظ ہیں۔ | آپ کے روحانی سفر کے لیے ❤️ کے ساتھ ڈیزائن کیا گیا"
-            }
-        };
-
-        // Function to select and store language
-        function selectLanguage(lang) {
-            localStorage.setItem('lang', lang);
-            applyTranslations();
-            window.location.reload();
-        }
-
-        // Function to apply translations
-        function applyTranslations() {
-            let lang = localStorage.getItem('lang') || 'en';
-            document.documentElement.lang = lang;
-            document.body.setAttribute('lang', lang);
-
-            // Update select dropdown
-            const select = document.getElementById('languageSelect');
-            if (select) {
-                select.value = lang;
-            }
-
-            // Update all elements with data-translate attribute
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[lang][key]) {
-                    // Handle elements with HTML content
-                    if (element.tagName === 'SPAN' || element.tagName === 'DIV' || element.tagName === 'P' || element.tagName === 'H1' || element.tagName === 'H2' || element.tagName === 'H3' || element.tagName === 'H4' || element.tagName === 'H5' || element.tagName === 'H6') {
-                        element.innerHTML = translations[lang][key];
-                    } else {
-                        element.textContent = translations[lang][key];
-                    }
-                }
-            });
-
-            // Update document title
-            document.title = translations[lang]['site_title'];
-        }
-
-        // On page load, check if language is set
-        document.addEventListener("DOMContentLoaded", function() {
-            let lang = localStorage.getItem('lang');
-            if (!lang) {
-                // Show modal if no language is selected
-                let langModal = new bootstrap.Modal(document.getElementById('languageModal'), { keyboard: false });
-                langModal.show();
-                localStorage.setItem('lang', 'en'); // Default to English
-            }
-            applyTranslations();
-
-            // Language selector in navbar
-            const languageSelect = document.getElementById('languageSelect');
-            if (languageSelect) {
-                languageSelect.addEventListener('change', function() {
-                    selectLanguage(this.value);
-                });
-            }
-        });
-
-        // Bootstrap Form Validation
-        (function () {
-            'use strict'
-            var forms = document.querySelectorAll('.needs-validation')
-
-            Array.prototype.slice.call(forms).forEach(function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    } else {
-                        event.preventDefault();
-                        let lang = localStorage.getItem('lang') || 'en';
-                        alert(translations[lang]['callback_success'] || "Thank you! We'll call you back within 24 hours.");
-                        form.reset();
-                        form.classList.remove('was-validated');
-                        var modal = bootstrap.Modal.getInstance(document.getElementById('callbackModal'));
-                        modal.hide();
-                    }
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })();
-
-        // Subscription Function
-        function subscribeUser(event) {
-            event.preventDefault();
-            let email = document.getElementById("email").value;
-            let messageBox = document.getElementById("message");
-            let lang = localStorage.getItem('lang') || 'en';
-
-            if (email.trim() === "") {
-                messageBox.innerHTML = `<div class='alert alert-danger'>${translations[lang]['email_invalid']}</div>`;
-                return;
-            }
-
-            // Simulate successful subscription
-            messageBox.innerHTML = `<div class="alert alert-success">${translations[lang]['subscribe_success'] || "Thank you for subscribing! You'll receive our latest updates."}</div>`;
-            document.getElementById("email").value = "";
-            
-            // Remove message after 5 seconds
-            setTimeout(() => {
-                messageBox.innerHTML = "";
-            }, 5000);
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <!-- ... (rest of the HTML remains the same) ... -->
 </body>
 </html>
