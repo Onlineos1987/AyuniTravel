@@ -102,6 +102,16 @@
             }
             // Note: applyTranslations is called after header is loaded in $(document).ready
         });
+        $(document).ready(function() {
+    $("#header-placeholder").load("header.html", function() {
+        applyTranslations();
+        // Highlight active nav link
+        const currentPage = window.location.hash || '#home';
+        $('.nav-link').removeClass('active');
+        $(`.nav-link[href="${currentPage}"]`).addClass('active');
+        // ... rest of the code ...
+    });
+});
 
         // Your existing form validation and subscription scripts
         // ... (keep your existing scripts for form validation and subscription) ...
