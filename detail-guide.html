@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your spiritual journey with our Umrah packages. Latest 2025 regulations, visa guidance, and premium services.">
+    <meta name="keywords" content="umrah, hajj, pilgrimage, makkah, madinah, islamic travel">
+    <title>Al-Iman Umrah | Spiritual Journeys with 2025 Compliance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0c4da2;
+            --secondary: #d4af37;
+            --accent: #1e6cc9;
+            --light: #f8f9fa;
+            --dark: #222f3e;
+            --success: #2ecc71;
+            --danger: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: var(--primary);
+        }
+        
+        .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--secondary);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--secondary);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(12, 36, 97, 0.85), rgba(12, 36, 97, 0.85)), url('https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        
+        .btn:hover {
+            background: #b9930c;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .card-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .card:hover .card-img img {
+            transform: scale(1.1);
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        /* Regulations */
+        .regulations {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+        }
+        
+        .regulations .section-title {
+            color: white;
+        }
+        
+        .regulation-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .regulation-item h3 {
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .regulation-item i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Features */
+        .feature-box {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid var(--secondary);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -12px;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Pricing */
+        .pricing-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-header {
+            background: var(--primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        
+        .pricing-features {
+            padding: 20px;
+            background: white;
+        }
+        
+        .pricing-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-footer {
+            padding: 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        /* FAQ */
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+        
+        /* Contact */
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(12, 77, 162, 0.25);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-col h3 {
+            color: var(--secondary);
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-col ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 18px;
+            }
+            
+            .right {
+                left: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                height: 80vh;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <div style="width:50px;height:50px;background:var(--secondary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.8rem;font-weight:bold;">م</div>
+                        <h1>Al-Iman Umrah</h1>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#guide">Umrah Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#visa">Visa Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#packages">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>Experience Spiritual Journey to Makkah & Madinah</h1>
+                    <p>Embark on a sacred journey with our premium Umrah packages designed according to the new 2025 regulations. Experience comfort, spirituality, and guidance.</p>
+                    <div>
+                        <a href="#packages" class="btn">View Packages</a>
+                        <a href="#contact" class="btn btn-outline">Book Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Services</h2>
+                <p>Trusted by thousands of pilgrims since 2005</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Expert Guidance</h3>
+                        <p>Our experienced scholars and guides will accompany you throughout your spiritual journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Premium Accommodation</h3>
+                        <p>Stay in 4 and 5-star hotels within walking distance to Al-Haram in Makkah and Madinah.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Compliance & Safety</h3>
+                        <p>All services fully comply with the new 2025 regulations for a hassle-free pilgrimage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regulations Section -->
+    <section class="regulations" id="regulations">
+        <div class="container">
+            <div class="section-title">
+                <h2>New Regulations After Hajj 2025</h2>
+                <p>Important updates for all pilgrims</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="regulation-item">
+                        <h3><i class="fas fa-passport"></i> Visa Updates</h3>
+                        <p>Umrah visas resumed on June 10, 2025 after Hajj season. Temporary bans on 14 countries have been lifted :cite[9]:cite[10].</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="regulation-item">
+                        <h3><i class="fas fa-syringe"></i> Health Requirements</h3>
+                        <p>Mandatory Meningococcal ACYW-135 vaccine for all travelers aged 1+ at least 10 days before arrival :cite[4]:cite[8].</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="regulation-item">
+                        <h3><i class="fas fa-hotel"></i> Accommodation Mandatory</h3>
+                        <p>Confirmed hotel booking and transportation are now required for visa approval :cite[9].</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="regulation-item">
+                        <h3><i class="fas fa-fingerprint"></i> Biometric Data</h3>
+                        <p>Biometric submission is now required for most pilgrims applying from outside Saudi Arabia :cite[2]:cite[7].</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="regulation-item">
+                        <h3><i class="fas fa-user"></i> Women Pilgrims</h3>
+                        <p>Women can perform Umrah alone without a mahram under current rules :cite[7].</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="regulation-item">
+                        <h3><i class="fas fa-calendar"></i> Visa Validity</h3>
+                        <p>Umrah visa validity extended to 90 days with multiple entry options :cite[5]:cite[9].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Guide -->
+    <section id="guide">
+        <div class="container">
+            <div class="section-title">
+                <h2>Step-by-Step Umrah Guide</h2>
+                <p>Your spiritual journey explained</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-praying-hands me-2"></i> Ihram</h3>
+                        <p>Enter the state of Ihram at designated Miqat points. For men: two white unstitched cloths. For women: modest Islamic dress.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-kaaba me-2"></i> Tawaf</h3>
+                        <p>Perform seven circuits around the Kaaba starting from the Black Stone. Pray at Maqam Ibrahim after completion.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-walking me-2"></i> Sa'i</h3>
+                        <p>Walk seven times between Safa and Marwah hills, commemorating Hagar's search for water.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-cut me-2"></i> Halq/Taqsir</h3>
+                        <p>Men shave their heads (Halq) or trim their hair (Taqsir). Women trim a fingertip's length of hair.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Process -->
+    <section id="visa" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visa & Travel Process</h2>
+                <p>Simplified procedures for your spiritual journey</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1581503341342-cd0ea4a8760c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Visa Process">
+                        </div>
+                        <div class="card-content">
+                            <h3>Document Requirements</h3>
+                            <ul class="mt-3">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Passport with 6+ months validity</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Passport-sized photographs</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Vaccination certificates</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Confirmed hotel booking</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Return flight ticket</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Proof of transportation arrangements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1580330368230-82b7f3c5c75f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Visa Application">
+                        </div>
+                        <div class="card-content">
+                            <h3>Application Process</h3>
+                            <ol class="mt-3">
+                                <li>Complete online application form</li>
+                                <li>Upload required documents</li>
+                                <li>Schedule biometric appointment</li>
+                                <li>Pay visa processing fees</li>
+                                <li>Receive e-visa via email (3-5 business days)</li>
+                                <li>Print visa and travel documents</li>
+                            </ol>
+                            <p class="mt-3 text-danger"><strong>Note:</strong> Processing may take longer during peak seasons :cite[5]:cite[7].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Umrah Packages</h2>
+                <p>Choose the perfect journey for your spiritual needs</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Economy Package</h3>
+                            <div class="price">$1,799<span>/person</span></div>
+                            <p>Perfect for budget-conscious pilgrims</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i> 14-day journey</li>
+                                <li><i class="fas fa-check text-success me-2"></i> 3-star accommodation</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Group guidance</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Economy flights</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Airport transfers</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Basic medical assistance</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#contact" class="btn w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header bg-warning">
+                            <h3>Premium Package</h3>
+                            <div class="price">$3,499<span>/person</span></div>
+                            <p>Most popular package with premium services</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i> 21-day journey</li>
+                                <li><i class="fas fa-check text-success me-2"></i> 4-star Haram-view hotels</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Personalized guidance</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Business class flights</li>
+                                <li><i class="fas fa-check text-success me-2"></i> VIP airport assistance</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Comprehensive medical coverage</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#contact" class="btn w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header bg-secondary">
+                            <h3>Family Package</h3>
+                            <div class="price">$8,999<span>/family</span></div>
+                            <p>Special package for families (up to 4 members)</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i> 28-day spiritual journey</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Family suite accommodation</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Private scholar guidance</li>
+                                <li><i class="fas fa-check text-success me-2"></i> First class flights</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Dedicated transportation</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Family-oriented activities</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#contact" class="btn w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules & Guidelines -->
+    <section id="rules" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Islamic Rulings & Conditions</h2>
+                <p>Essential guidelines for your pilgrimage</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-male me-2"></i> Rules for Men</h3>
+                            <ul class="mt-3">
+                                <li>Wear two unstitched white cloths for Ihram</li>
+                                <li>Refrain from cutting hair or nails during Ihram</li>
+                                <li>Avoid scented products and perfumes</li>
+                                <li>Maintain proper decorum in sacred places</li>
+                                <li>Perform Tawaf and Sa'i with proper intention</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-female me-2"></i> Rules for Women</h3>
+                            <ul class="mt-3">
+                                <li>Wear modest Islamic dress covering entire body</li>
+                                <li>May use unscented hygiene products</li>
+                                <li>Pray in designated women's areas</li>
+                                <li>May perform Umrah alone (without mahram) :cite[7]</li>
+                                <li>Maintain proper hijab throughout pilgrimage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-check-circle me-2"></i> Do's of Umrah</h3>
+                            <ul class="mt-3">
+                                <li>Maintain pure intention (Niyyah) for Allah</li>
+                                <li>Be patient and kind to fellow pilgrims</li>
+                                <li>Recite Talbiyah frequently during Ihram</li>
+                                <li>Respect the sanctity of the holy sites</li>
+                                <li>Make abundant dua during your journey</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3><i class="fas fa-times-circle me-2"></i> Don'ts of Umrah</h3>
+                            <ul class="mt-3">
+                                <li>Don't argue or use foul language</li>
+                                <li>Don't harm or inconvenience others</li>
+                                <li>Don't waste resources (water, food)</li>
+                                <li>Don't engage in worldly commerce during rituals</li>
+                                <li>Don't neglect prayers and remembrance of Allah</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to your important questions</p>
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            When is the best time to perform Umrah in 2025?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Umrah can be performed year-round except during Hajj season. For 2025, visas are available from June 10 after Hajj concludes. The most recommended times are Ramadan and the winter months for comfortable weather :cite[9].
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What vaccinations are required for Umrah?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Mandatory Meningococcal ACYW-135 vaccine for all travelers aged 1+ at least 10 days before arrival. Polio vaccine required for travelers from endemic countries, and yellow fever vaccine for travelers from at-risk regions :cite[4]:cite[8].
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can women perform Umrah without a mahram?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, current regulations allow women to perform Umrah without a mahram. However, it's recommended to travel in groups for safety and support :cite[7].
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How long does the Umrah visa process take?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Processing typically takes 3-5 business days but may extend to 2 weeks during peak seasons. Apply at least 4 weeks before travel to account for potential delays :cite[5]:cite[7].
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            What are the penalties for overstaying my visa?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Overstaying visas carries severe penalties including substantial fines (SAR 10,000+), deportation, and entry bans of up to 10 years. Ensure you depart before visa expiration :cite[6].
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background:linear-gradient(rgba(12, 36, 97, 0.9), rgba(12, 36, 97, 0.9));">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color:white;">Contact Us</h2>
+                <p style="color:#ddd;">Start your spiritual journey today</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h3 class="text-center mb-4">Book Your Umrah Journey</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="package" class="form-label">Package Interest</label>
+                                <select class="form-select" id="package">
+                                    <option value="">Select a Package</option>
+                                    <option value="economy">Economy Package</option>
+                                    <option value="premium">Premium Package</option>
+                                    <option value="family">Family Package</option>
+                                    <option value="custom">Custom Package</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="travelers" class="form-label">Number of Travelers</label>
+                                <input type="number" class="form-control" id="travelers" min="1" value="1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn w-100">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="text-white">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <i class="fas fa-map-marker-alt fa-2x text-warning"></i>
+                            </div>
+                            <div>
+                                <h4>Our Office</h4>
+                                <p>123 Islamic Center, Makkah Road, Jeddah, Saudi Arabia</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <i class="fas fa-phone-alt fa-2x text-warning"></i>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+966 12 345 6789</p>
+                                <p>+966 98 765 4321</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <i class="fas fa-envelope fa-2x text-warning"></i>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@al-iman-umrah.com</p>
+                                <p>bookings@al-iman-umrah.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <i class="fas fa-clock fa-2x text-warning"></i>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Saturday - Thursday: 9AM - 6PM</p>
+                                <p>Friday: 1PM - 6PM</p>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4 class="mb-3">Connect With Us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3>Al-Iman Umrah</h3>
+                    <p>Providing spiritual journeys to Makkah and Madinah with excellence since 2005. Fully compliant with all new regulations for your peace of mind.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#guide">Umrah Guide</a></li>
+                        <li><a href="#visa">Visa Process</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h3>Our Packages</h3>
+                    <ul>
+                        <li><a href="#">Economy Package</a></li>
+                        <li><a href="#">Premium Package</a></li>
+                        <li><a href="#">Family Package</a></li>
+                        <li><a href="#">Ramadan Special</a></li>
+                        <li><a href="#">Group Discounts</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates on regulations and special offers.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <button type="submit" class="btn w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright mt-5">
+                <p>&copy; 2025 Al-Iman Umrah Tours. All rights reserved. | Compliant with Saudi Ministry of Hajj and Umrah Regulations</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Sticky header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('shadow-sm', window.scrollY > 0);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('#contact form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your inquiry! We will contact you shortly.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
